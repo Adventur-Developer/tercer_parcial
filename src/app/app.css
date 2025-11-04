@@ -1,0 +1,56 @@
+.panel-principal {
+  width: 90%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.titulo {
+  text-align: center;
+  color: white;
+  background-color: #333;
+  padding: 20px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.pestanas {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.pestanas button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+  border-bottom: 2px solid transparent;
+}
+
+.pestanas button:hover {
+  color: #007bff;
+}
+
+.pestanas button.activa {
+  font-weight: bold;
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+}
+
+.separador {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 10px 0 20px 0;
+}
+
+.contenido {
+  min-height: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

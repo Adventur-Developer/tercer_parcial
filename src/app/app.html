@@ -1,0 +1,34 @@
+<main class="main">
+  <div class="panel-principal">
+
+  <!-- Título Principal -->
+  <h1 class="titulo">EXAMEN</h1>
+
+  <!-- Barra de Navegación / Pestañas -->
+  <nav class="pestanas">
+    <button 
+      *ngFor="let tab of tabs" 
+      (click)="setActiveTab(tab)"
+      [class.activa]="activeTab === tab">
+      {{ tab }}
+    </button>
+  </nav>
+
+  <!-- Separador -->
+  <hr class="separador">
+
+  <!-- Contenido del Componente Seleccionado -->
+  <div class="contenido">
+    <app-componente-uno *ngIf="activeTab === 'componente-uno'"></app-componente-uno>
+    <app-componente-dos *ngIf="activeTab === 'componente-dos'"></app-componente-dos>
+    <app-componente-tres *ngIf="activeTab === 'componente-tres'"></app-componente-tres>
+    <app-componente-cuatro *ngIf="activeTab === 'componente-cuatro'"></app-componente-cuatro>
+    <app-componente-cinco *ngIf="activeTab === 'componente-cinco'"></app-componente-cinco>
+    <app-componente-seis *ngIf="activeTab === 'componente-seis'"></app-componente-seis>
+    <app-componente-siete *ngIf="activeTab === 'componente-siete'"></app-componente-siete>
+    <app-componente-ocho *ngIf="activeTab === 'componente-ocho'"></app-componente-ocho>
+  </div>
+
+</div>
+
+</main>
